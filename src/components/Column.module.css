@@ -1,0 +1,30 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.column > p {
+  border-top: 1px solid #e6e6e6;
+  font-size: 14px;
+  padding: 5px;
+  min-height: 30px;
+  vertical-align: middle;
+  display: flex;
+  justify-items: center;
+}
+
+.column > p:nth-child(1) {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.column .greenCircle {
+  height: 10px;
+  width: 10px;
+  background-color: lightgreen;
+  border-radius: 100%;
+  margin-right: 5px;
+  align-self: center;
+}
