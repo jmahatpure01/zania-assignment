@@ -60,7 +60,7 @@ export function Table({ data }: { data: Array<IdataItem> }) {
 
   const handleAllSelectorCheckboxChange = (checked: boolean) => {
     if (checkboxData.length) {
-      let rowCheckboxes = checkboxData.map(() => checked);
+      const rowCheckboxes = checkboxData.map(() => checked);
       setCheckboxData(rowCheckboxes);
       if (checked) {
         setSelectedRows(data);
@@ -88,6 +88,7 @@ export function Table({ data }: { data: Array<IdataItem> }) {
         '',
         ...data.map((_, idx) => (
           <Checkbox
+            key={'checkbox' + idx}
             checked={checkboxData[idx]}
             onChange={(evt) => handleCheckboxChange(evt, idx)}
           />

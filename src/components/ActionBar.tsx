@@ -1,5 +1,5 @@
 import styles from '@/components/ActionBar.module.css';
-import React, { Dispatch, RefObject, SetStateAction } from 'react';
+import React, { RefObject } from 'react';
 import { IdataItem } from '@/interfaces';
 export function ActionBar({
   allSelectorCheckboxRef,
